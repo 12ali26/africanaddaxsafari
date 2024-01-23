@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>African Addax Safaris</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">logo</div>
+            <div class="nav-bar">
+              <ul>
+                  <li><a href="index.html">home</a></li>
+                  <li><a href="about.html">about us</a></li>
+                  <li><a href="gallery.html">gallery</a></li>
+                  <li><a href="contact.html">contact us</a></li>
+                  <li><a href="package.html">packages</a></li>
+              </ul>
+            </div>
+             
+              <div class="hamburger-menu">
+                  <img src="IMAGES/hamburger menu icon.svg" alt="">
+              </div>
+             
+          </div>
+    </header>
+    <main>
+        <div class="alas">
+            <h1>Get in touch with African Addax Safaris</h1>
+            <p>for all your inqueries and booking:</p>
+        </div>
+
+        <div class="contact-info">
+            <div class="info">
+                <img src="IMAGES/location.svg" alt="">
+                <h3>our location</h3>
+                <p>Nairobi West Estate</p>
+                <span>P.O. Box 11281-00100, Nairobi, Kenya</span>
+
+            </div>
+            <div class="info">
+                <img src="IMAGES/phone.svg" alt="">
+                <h3>phone number</h3>
+                <span>+254 712 345678</span>
+
+            </div>
+            <div class="info">
+                <img src="IMAGES/email.svg" alt="">
+                <h3>email</h3>
+                <span>africanaddaxsafaris@gmail.com</span>
+
+            </div>
+        </div>
+        <form class="form1">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br><br>
+            <input type="submit" value="send message">
+
+        </form>
+    </main>
+    <footer>
+        <div class="description">
+            <h2>African Addax Safaris</h2>
+            <p>Join us as we journey through the heart of nature, creating stories that resonate with the spirit of the wild. Your safari adventure begins with us – where every footprint tells a tale and every sunset paints a masterpiece. </p>
+        </div>
+        <div class="quick-links">
+            <span>quick links</span>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about us</a></li>
+                <li><a href="contact.html">contact us</a></li>
+                <li><a href="gallery.html"> gallery</a></li>
+            </ul>
+        </div>
+        <div class="info-link">
+            <span>info</span>
+            <a href="#">privacy policy</a>
+            <a href="#">terms of service</a>
+            <div class="social-links">
+                <ul>
+                    <li><a class="social" href="" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a  class="social" href=""><ion-icon name="mail-outline"></ion-icon></a></li>
+                </ul>
+            </div>
+        </div>
+        <form  class="form2" action="newsletter">
+            <h4>newsletter</h4>
+            <span>subscribe and get the latest news</span>
+            <input type="email" placeholder="" required>
+            <button type="submit">subscribe</button>
+
+        </form>
+    </footer>
+  
+    <script>
+        hamburger = document.querySelector(".hamburger-menu");
+hamburger.onclick = function() {
+    navBar = document.querySelector(".nav-bar");
+    navBar.classList.toggle("active")
+}
+    </script>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

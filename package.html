@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="package.css">
+  <title>Safari Packages - Your Safari Tour Guide</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+           <div class="logo"><img src="IMAGES/logo_3-removebg-preview.png" alt=""></div>
+           <div class="nav-bar">
+             <ul>
+                 <li><a href="index.html">home</a></li>
+                 <li><a href="about.html">about us</a></li>
+                 <li><a href="gallery.html">gallery</a></li>
+                 <li><a href="contact.html">contact us</a></li>
+                 <li><a href="package.html"> packages</a></li>
+             </ul>
+           </div>
+            
+             <div class="hamburger-menu">
+                 <img src="IMAGES/hamburger menu icon.svg" alt="">
+             </div>
+            
+         </div>
+         
+     </header>
+  <main>
+    <section class="packages">
+      <h2>Explore Our Safari Packages</h2>
+
+      <div class="package">
+        <h3>Classic Safari</h3>
+        <p>Immerse yourself in the heart of the wilderness with our Classic Safari package. Witness iconic wildlife and breathtaking landscapes.</p>
+        <ul>
+          <li>Guided safari tours</li>
+          <li>Luxury accommodations</li>
+          <li>Photography workshops</li>
+        </ul>
+        <p class="price">$1999 per person</p>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+
+      <div class="package">
+        <h3>Adventure Expedition</h3>
+        <p>For the thrill-seekers, our Adventure Expedition package offers a combination of adrenaline-pumping activities and close wildlife encounters.</p>
+        <ul>
+          <li>Off-road safari adventures</li>
+          <li>Bushwalks and hikes</li>
+          <li>Camping under the stars</li>
+        </ul>
+        <p class="price">$2499 per person</p>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+
+      <div class="package">
+        <h3>Wilderness Backpacker</h3>
+        <p>For the adventurous souls, our Wilderness Backpacker package offers a rugged safari experience. Explore remote areas and sleep under the vast African sky.</p>
+        <ul>
+          <li>Backpacker-friendly safari tours</li>
+          <li>Camping in the wilderness</li>
+          <li>Bushcraft and survival skills</li>
+        </ul>
+        <p class="price">$1799 per person</p>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+
+      <div class="package">
+        <h3>Cultural Safari</h3>
+        <p>Immerse yourself in the rich cultural tapestry surrounding the wildlife. Our Cultural Safari package combines wildlife adventures with unique cultural experiences.</p>
+        <ul>
+          <li>Guided cultural tours</li>
+          <li>Interactions with local communities</li>
+          <li>Traditional music and dance performances</li>
+        </ul>
+        <p class="price">$2499 per person</p>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Your Safari Tour Guide. All rights reserved. | Privacy Policy | Terms of Service</p>
+  </footer>
+  
+  <script>
+    hamburger = document.querySelector(".hamburger-menu");
+hamburger.onclick = function() {
+navBar = document.querySelector(".nav-bar");
+navBar.classList.toggle("active")
+}
+
+</script>
+</body>
+</html>

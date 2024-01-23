@@ -1,0 +1,316 @@
+body{
+    box-sizing: border-box;
+    font-family:'Inter', sans-serif;
+    background-color: #cdcdd1c8;
+    ;
+
+}
+
+@keyframes fadeInRight {
+    0% {opacity: 0; transform: translateX(100%);}
+    100%{opacity: 1; transform: translateX(0);}
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1;}
+}
+@keyframes slide{
+    from {
+        opacity:0;
+         transform:scale(1.1)
+        }
+    to{
+        opacity:1;
+         transform: scale(1);
+        }
+}
+header > p{
+    font-size: 70px;
+    color: white;
+    font-weight: 700;
+    line-height: 93px;
+    text-align: center;
+  
+}
+header{
+    width: 100%;
+    height: 80vh;
+    /* margin-block-start: 0; */
+    background:url("IMAGES/Best Free Stock Photos for 2023 _ Page 6 of 63 _ picjumbo (1) 1.png") rgb(0 0 0);
+    background-size: 1250px;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-position-y:-5em ;
+    border-radius: 5px;
+    animation:fadeInRight 1s ease forwards;
+}
+.navbar{
+    position: relative;
+    max-width:99vw;
+    min-height: 0.5em;
+    margin: auto;
+    background:transparent;
+    color: white ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size:clamp(1.4em, 10px, 3em) ;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay:1s ;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+}
+.navbar li{
+    padding-inline: 2em;
+    border-radius: 2px;
+}
+.navbar li a{
+    text-decoration: none;
+    color:black;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+.navbar a:hover{
+    background: black;
+    color: white;
+}
+.navbar a.active{
+    background-color: aliceblue;
+    color: black;
+}
+
+        .hamburger-menu{
+            display: none;
+        }
+
+.hamburger-menu img{
+ width: 2em;
+ cursor: pointer;
+}
+.logo{
+    display:block;
+}
+.logo img{
+    max-width: 6.4em;
+}
+
+
+@media screen and (max-width:900px){
+    .nav-bar{
+        position: absolute;
+        height: 0;
+        top: 50px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: rgba(255 255 255 / 0.9);
+        transition: 0.5s;
+        overflow: hidden;
+
+    }
+    .nav-bar.active{
+        height: 450px;
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        text-align: center;
+        margin: 80px auto;
+        opacity: 0;
+    
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+    .nav-bar li{
+        margin-block: 2em;
+    }
+    .nav-bar li a{
+        color:black;
+        font-size: 18px;
+    }
+    .hamburger-menu{
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 1em;
+    }
+    
+    .logo{
+        position: absolute;
+        top: 50%;
+        left: 4%;
+    }
+}
+main{
+    opacity: 0;
+    animation: comeUp 1s ease forwards;
+    animation-delay: 0.5s;
+}
+@keyframes comeUp{
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.alas{
+    display: grid;
+    max-width: 950px;
+    margin-inline: auto;
+    text-align: center;
+}
+.alas p{
+    line-height: 1.5;
+    font-size: 20px;
+}
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 950px;
+    margin-inline: auto;
+    align-content: center;
+    gap:1em;
+}
+
+.info{
+
+    display: grid;
+    place-items:center;
+    background: white;
+    border-radius: 0.7em;
+    box-shadow: 0 1.6rem 2rem -0.5rem rgb(0 0 0 / 0.45);
+}
+.info img{
+    height: 7em;
+}
+.form1 {
+    width: 60%;
+    margin: 2em auto;
+}
+
+.form1 label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form1 input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+.form1 input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.form1 input[type="submit"]:hover {
+    background-color: #45a049;
+    
+}
+footer{
+    max-width: 98vw;
+    margin:1em auto;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,3fr));
+    gap: 1em;
+    background: black;
+    border-radius: 15px;
+}
+footer > *{
+    /* border: 2px solid white;. */
+    color: white;
+}
+.description{
+   display:flex;
+   flex-direction: column;
+   row-gap: 1em;
+   padding: 1em;
+}
+.quick-links{
+    display:flex;
+    flex-direction: column;
+    padding: 1em;
+}
+.quick-links ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+ 
+  
+}
+.quick-links li{
+    line-height: 40px;
+    text-decoration: none;
+
+    
+  
+}
+.quick-links a{
+    text-decoration: none;
+    color: white;
+    padding: 2em;
+    text-align: center;
+ 
+}
+.quick-links span{
+    margin-inline: 3em;
+    font-size: 18px;
+    text-decoration-line: underline;
+   
+}
+.info-link{
+    display:grid;
+    padding: 2em;
+}
+.social-links{
+    display: inline-block;
+
+}
+.social{
+    color: white;
+}
+.form2{
+    display: grid;
+    margin-inline: 2em;
+    margin-block-end: 1em;
+    gap: 1em;
+    max-width: 70vw;
+}
+.form2 button{
+    padding: 10px;
+    max-width: 20vw;
+    background-color: #a66e74;
+    border: 2px solid black;
+    cursor: pointer;
+    color:white;
+    border-radius: 15px;
+    align-self: center;
+
+}
+.form2 input[type="email"]{
+    width: 90%;
+    height: 30px;
+    padding: 10px;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 15px;
+
+}
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF -8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>African Addax Safaris</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <header>
+       <div class="navbar">
+          <div class="logo"><img src="IMAGES/logo_3-removebg-preview.png" alt=""></div>
+          <div class="nav-bar">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about us</a></li>
+                <li><a href="gallery.html">gallery</a></li>
+                <li><a href="contact.html">contact us</a></li>
+                <li><a href="package.html"> packages</a></li>
+            </ul>
+          </div>
+           
+            <div class="hamburger-menu">
+                <img src="IMAGES/hamburger menu icon.svg" alt="">
+            </div>
+           
+        </div>
+        
+    </header>
+    <section class="home">
+        <div class="slider">
+            <div class="slide active" style="background-image: url('IMAGES/download (13) 1.png');">
+                <div class="container ">
+                    <div class="caption">
+                        <h1>01. Embark on a Kenyan Safari Adventure Like Never Before!</h1>
+                    <p>Immerse yourself in the untouched beauty of Kenya's landsacape as you venture into the heart of the wild. Witness iconic wildlife in their natural habitat, paired with unmatched comfort and luxury. Your safari journey in Kenya promises  extraordinary moments and unforgettable memories</p>
+                    <a href="about.html">Explore</a>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="slide" style="background-image: url('IMAGES/conor-luddy-IVaKksEZmZA-unsplash\ 1.png');">
+                <div class="container">
+                    <div class="caption">
+                        <h1>02. Embark on an Epic Safari Expedition with Africa Addax Safaris</h1>
+                    <p>Indulge in luxury as you explore the iconic Maasai Mara, the rugged terrains of Tsavo, the breathtaking Mt.Kenya and the mesmerizing Lake Nakuru. African Addax Safari redefines elegance in every aspect of your safari adventure</p>
+                    <a href="about.html">Explore</a>
+                    </div>  
+                </div>
+            </div>
+        
+            <div class="slide" style="background-image: url('IMAGES/Elephant Safari.jpg');">
+                <div class="container">
+                    <div class="caption">
+                        <h1>03. Luxury Redefined</h1>
+                    <p>Our expertly crafted itineries blend adventure and luxury seamlessly.Experience the magic of Kenya while enjoying the comforts of refined luxury at every destinations.</p>
+                    <a href="about.html" style="background-color: rgba(0 0 0 /0.4);">Book Now</a>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <div class="prev"> < </div>
+            <div class="next"> > </div>
+        </div>
+        <div class="indicator"></div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Your Safari Tour Guide. All rights reserved. | Privacy Policy | Terms of Service</p>
+      </footer>
+
+    <script>
+        hamburger = document.querySelector(".hamburger-menu");
+    hamburger.onclick = function() {
+    navBar = document.querySelector(".nav-bar");
+    navBar.classList.toggle("active")
+    }
+
+    </script>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
